@@ -26,7 +26,7 @@ defmodule Servy.BearController do
     }
   end
 
-  defp render(conv, template, bindings \\ []) do
+  defp render(conv, template, bindings) do
     content =
       @templates_path
       |> Path.join(template)
