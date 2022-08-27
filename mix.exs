@@ -21,7 +21,9 @@ defmodule Servy.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:credo, "~> 1.6"}
+      {:credo, "~> 1.6", only: [:dev, :test]},
+      {:poison, "~> 5.0"},
+      {:httpoison, "~> 1.8"}
     ]
   end
 end
